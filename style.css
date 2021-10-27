@@ -1,4 +1,6 @@
 /* general styling goes here */
+/*font-family: 'Inconsolata', monospace;
+font-family: 'Raleway', sans-serif;*/
 .menu-bar ul{
   list-style-type: none;
   margin-top: 10px;
@@ -6,6 +8,7 @@
   padding: 0;
   overflow: hidden;
   background-color: #AC773C;
+  font-family: 'Inconsolata', monospace;
 }
 .menu-bar li {
   float: left;
@@ -14,7 +17,7 @@
 }
 .menu-bar li a {
   display: block;
-  color: white;
+  color: #EECFC5;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -25,20 +28,20 @@
 .active{
   background-color: #663B00;
 }
-  }
-}
+
 @media screen and (max-width: 900px) {
   .menu-bar ul {
     width: 100%;
     height: auto;
     position: relative;
   }
+}
 
   .menu-bar li  {
     float: left;
     padding: 0;
   }
-}
+
 @media screen and (max-width: 400px) {
   .menu-bar li  {
     text-align: center;
@@ -46,6 +49,7 @@
     align-items: center;
 
   }
+}
 
 
 
@@ -57,7 +61,6 @@
 
 
 /* home page styling goes here */
-}
 @media screen and (max-width: 400px){
   .banner{
           width: 100% ;
@@ -65,12 +68,66 @@
 
       }
     }
+
   .welcome{
-    background-color:#AC773C;
     text-align: center;
-    font-size: 50px;
-    margin:0px;
+    font-size: 90px;
+    margin-top:20px;
+    margin-bottom:20px;
+    font-family:'Inconsolata', monospace;
+    color: #AC773C;
+    letter-spacing: 10px;
+    font-weight: bold;
+    border: 5px solid #AC773C;
+    padding: 5px;
+
+
+}
+
+  .hp_headers li {
+    list-style-type: none;
+    display:inline-block;
+    margin-left: 180px;
+    margin-right: 200px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 35px;
+    color: #663B00;
+
   }
+  .hp_container{
+    display: flex;
+
+
+  }
+  .flex-child {
+    flex: 1;
+    border: 10px solid #AC773C ;
+    margin: 30px;
+    align-items:center;
+    background-color: #EECFC5;
+
+
+  }
+  .flex-child img{
+    width: 150px;
+    height: 150px;
+margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display:inline-block;
+  float: middle;
+
+
+
+  }
+
+  }
+  .flex-child socials ul{
+  list-style-type: none;
+  }
+.home{
+  background-color: white;
+}
 
 
 
@@ -85,7 +142,46 @@
 
 
 /* about page styling goes here */
+.aboutme {
+  display: flex;
+  justify-content: center;
+  margin-top:
+  margin-bottom: 25%;
+  font-family: 'Raleway', sans-serif;*/
 
+}
+.aboutme p{
+  flex: 1;
+  border: 8px solid #AC773C;
+  margin: 30px;
+  max-width: 700px;
+  font-size: 25px;
+  padding: 15px;
+  background-color: white;
+
+
+}
+.infome {
+ background-image: url(img/collage.png);
+
+}
+.circle{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: blue;
+  display:inline-block;
+  vertical-align:middle;
+  margin-left: 38%;
+  margin-top: 10%;
+  border: 10px solid #AC773C;
+
+}
+.circle img{
+  width: 110%;
+  float: left;
+}
 
 
 
@@ -98,3 +194,33 @@
 
 
 /* resume page styling goes here */
+.resume1{
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+
+}
+.resume1 h2{
+  display: block;
+  background-color:#663B00;
+  color: white;
+  font-family: 'Inconsolata', monospace;
+  letter-spacing: 3px;
+  padding-left:10px;
+  width:100%;
+  height:40px;
+}
+
+.experience{
+  display: table;
+  min-height: 300px;
+    width: 100%;
+    gap: 15px 15px;
+    margin-bottom: 15px;
+    font-size: 10px;
+    align-items: center;
+    justify-content: column;
+
+}
+.flexkid{
+  margin-bottom: 40px;
+}
